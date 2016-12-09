@@ -1,0 +1,15 @@
+package com.practice;
+
+import java.util.Arrays;
+
+import org.junit.*;
+
+import junit.framework.*;
+
+public class P01Test extends TestCase {
+	@Test
+	public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
+	    assertThat(P01.last(Arrays.asList("a", "b", "c", "d")), is(equalTo("d")));
+	}
+
+}

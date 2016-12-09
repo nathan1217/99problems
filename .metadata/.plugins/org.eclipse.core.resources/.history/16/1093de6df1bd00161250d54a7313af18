@@ -1,0 +1,13 @@
+package com.practice;
+
+import java.util.NoSuchElementException;
+
+import org.junit.Test;
+
+public class P02Test {
+	@Test(expected = NoSuchElementException.class)
+	public void when_list_is_null_should_throw_exception() throws Exception {
+		assertThat(P02.secondLast(asList(null)), is(equalTo(new Object())));
+	}
+
+}

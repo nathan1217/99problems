@@ -1,0 +1,25 @@
+package com.practice;
+
+import java.util.Arrays;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+
+public class P01Test extends TestCase {
+	public P01Test(String testName) {
+		super(testName);
+	}
+
+	public static Test suite() {
+		return new TestSuite(P01Test.class);
+	}
+ 
+	public void testsLast() {
+		assertTrue(true);
+		assertEquals(P01.last(Arrays.asList("a", "b", "c", "d")), is(equalTo("d")));
+	}
+}
